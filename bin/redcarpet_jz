@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+lib_path = File.expand_path('../../lib', __FILE__)
+$:.unshift(lib_path)
+
+require 'redcarpet'
+require 'rouge'
+require 'rouge/plugins/redcarpet'
+
+class JzHTML < Redcarpet::Render::HTML
+    include Redcarpet::Render::SmartyPants
+    include Rouge::Plugins::Redcarpet
+
+    OPTIONS = {
+      autolink: true,
+      fenced_code_blocks: true,
+      no_intra_emphasis: true,
+      quote: true,
+      strikethrough: true,
+      space_after_headers: false,
+      tables: true,
+    }.freeze
+
+end
+
+parser_object=Redcarpet::Markdown.new(JzHTML, JzHTML::OPTIONS)
+STDOUT.write parser_object.render(ARGF.read)
