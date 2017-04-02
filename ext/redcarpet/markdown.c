@@ -1356,7 +1356,7 @@ is_hrule(uint8_t *data, size_t size)
 /* check if a line begins with a code fence; return the
  * width of the code fence */
 static size_t
-prefix_codefence(uint8_t *data, size_t size)
+prefix_codefence(const uint8_t *data, size_t size)
 {
 	size_t i = 0, n = 0;
 	uint8_t c;
@@ -1386,10 +1386,10 @@ prefix_codefence(uint8_t *data, size_t size)
 
 /* check if a line is a code fence; return its size if it is */
 static size_t
-is_codefence(uint8_t *data, size_t size, struct buf *syntax)
+is_codefence(const uint8_t *data, size_t size, struct buf *syntax)
 {
 	size_t i = 0, syn_len = 0;
-	uint8_t *syn_start;
+	const uint8_t *syn_start;
 
 	i = prefix_codefence(data, size);
 	if (i == 0)
@@ -1427,7 +1427,8 @@ is_codefence(uint8_t *data, size_t size, struct buf *syntax)
 	}
 
 	if (syntax) {
-		syntax->data = syn_start;
+        /* Trust caller to not free this */
+		syntax->data = (uint8_t *)syn_start;
 		syntax->size = syn_len;
 	}
 
