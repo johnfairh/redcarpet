@@ -2802,7 +2802,8 @@ sd_markdown_render(struct buf *ob, const uint8_t *document, size_t doc_size, str
 #define MARKDOWN_GROW(x) ((x) + ((x) >> 1))
 	static const char UTF8_BOM[] = {0xEF, 0xBB, 0xBF};
 
-    fputs("I AM RUNNING THE RIGHT REDCARPET CODE\n", stderr);
+	if (getenv("JF_NOISY"))
+		fprintf(stderr, "I AM RUNNING THE RIGHT REDCARPET CODE ON {%s}\n", (const char *)document);
 
 	struct buf *text;
 	size_t beg, end;
@@ -2887,6 +2888,9 @@ sd_markdown_render(struct buf *ob, const uint8_t *document, size_t doc_size, str
 
 	/* Null-terminate the buffer */
 	bufcstr(ob);
+
+	if (getenv("JF_NOISY"))
+		fprintf(stderr, "I RAN THE RIGHT REDCARPET CODE GIVING {%s}\n", (const char *)ob->data);
 
 	/* clean-up */
 	bufrelease(text);

@@ -5,3 +5,9 @@
 /ext/redcarpet/Makefile
 /tmp
 Gemfile.lock
+.DS_Store
+xcuserdata
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint

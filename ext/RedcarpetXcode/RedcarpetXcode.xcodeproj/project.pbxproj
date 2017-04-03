@@ -1,0 +1,239 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXFileReference section */
+		023039591E925B48009DCDB5 /* autolink.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autolink.c; path = ../redcarpet/autolink.c; sourceTree = "<group>"; };
+		0230395A1E925B48009DCDB5 /* autolink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autolink.h; path = ../redcarpet/autolink.h; sourceTree = "<group>"; };
+		0230395B1E925B48009DCDB5 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = buffer.c; path = ../redcarpet/buffer.c; sourceTree = "<group>"; };
+		0230395C1E925B48009DCDB5 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = buffer.h; path = ../redcarpet/buffer.h; sourceTree = "<group>"; };
+		0230395D1E925B48009DCDB5 /* extconf.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = extconf.rb; path = ../redcarpet/extconf.rb; sourceTree = "<group>"; };
+		0230395E1E925B48009DCDB5 /* houdini_href_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = houdini_href_e.c; path = ../redcarpet/houdini_href_e.c; sourceTree = "<group>"; };
+		0230395F1E925B48009DCDB5 /* houdini_html_e.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = houdini_html_e.c; path = ../redcarpet/houdini_html_e.c; sourceTree = "<group>"; };
+		023039601E925B48009DCDB5 /* houdini.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = houdini.h; path = ../redcarpet/houdini.h; sourceTree = "<group>"; };
+		023039611E925B48009DCDB5 /* html_blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html_blocks.h; path = ../redcarpet/html_blocks.h; sourceTree = "<group>"; };
+		023039621E925B48009DCDB5 /* html_smartypants.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html_smartypants.c; path = ../redcarpet/html_smartypants.c; sourceTree = "<group>"; };
+		023039631E925B48009DCDB5 /* html.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = html.c; path = ../redcarpet/html.c; sourceTree = "<group>"; };
+		023039641E925B48009DCDB5 /* html.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = html.h; path = ../redcarpet/html.h; sourceTree = "<group>"; };
+		023039651E925B48009DCDB5 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = markdown.c; path = ../redcarpet/markdown.c; sourceTree = "<group>"; };
+		023039661E925B48009DCDB5 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = markdown.h; path = ../redcarpet/markdown.h; sourceTree = "<group>"; };
+		023039671E925B48009DCDB5 /* rc_markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rc_markdown.c; path = ../redcarpet/rc_markdown.c; sourceTree = "<group>"; };
+		023039681E925B48009DCDB5 /* rc_render.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rc_render.c; path = ../redcarpet/rc_render.c; sourceTree = "<group>"; };
+		023039691E925B48009DCDB5 /* redcarpet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = redcarpet.h; path = ../redcarpet/redcarpet.h; sourceTree = "<group>"; };
+		0230396A1E925B48009DCDB5 /* stack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = stack.c; path = ../redcarpet/stack.c; sourceTree = "<group>"; };
+		0230396B1E925B48009DCDB5 /* stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = stack.h; path = ../redcarpet/stack.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0230393B1E925354009DCDB5 = {
+			isa = PBXGroup;
+			children = (
+				023039591E925B48009DCDB5 /* autolink.c */,
+				0230395A1E925B48009DCDB5 /* autolink.h */,
+				0230395B1E925B48009DCDB5 /* buffer.c */,
+				0230395C1E925B48009DCDB5 /* buffer.h */,
+				0230395D1E925B48009DCDB5 /* extconf.rb */,
+				0230395E1E925B48009DCDB5 /* houdini_href_e.c */,
+				0230395F1E925B48009DCDB5 /* houdini_html_e.c */,
+				023039601E925B48009DCDB5 /* houdini.h */,
+				023039611E925B48009DCDB5 /* html_blocks.h */,
+				023039621E925B48009DCDB5 /* html_smartypants.c */,
+				023039631E925B48009DCDB5 /* html.c */,
+				023039641E925B48009DCDB5 /* html.h */,
+				023039651E925B48009DCDB5 /* markdown.c */,
+				023039661E925B48009DCDB5 /* markdown.h */,
+				023039671E925B48009DCDB5 /* rc_markdown.c */,
+				023039681E925B48009DCDB5 /* rc_render.c */,
+				023039691E925B48009DCDB5 /* redcarpet.h */,
+				0230396A1E925B48009DCDB5 /* stack.c */,
+				0230396B1E925B48009DCDB5 /* stack.h */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		023039401E925354009DCDB5 /* RedcarpetXcode */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "$(ACTION)";
+			buildConfigurationList = 023039431E925354009DCDB5 /* Build configuration list for PBXLegacyTarget "RedcarpetXcode" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/bin/rake;
+			buildWorkingDirectory = /Users/johnf/project/redcarpet;
+			dependencies = (
+			);
+			name = RedcarpetXcode;
+			passBuildSettingsInEnvironment = 0;
+			productName = RedcarpetXcode;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXProject section */
+		0230393C1E925354009DCDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "John Fairhurst";
+				TargetAttributes = {
+					023039401E925354009DCDB5 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = D243YH28Y6;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 0230393F1E925354009DCDB5 /* Build configuration list for PBXProject "RedcarpetXcode" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0230393B1E925354009DCDB5;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				023039401E925354009DCDB5 /* RedcarpetXcode */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin XCBuildConfiguration section */
+		023039411E925354009DCDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+			};
+			name = Debug;
+		};
+		023039421E925354009DCDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+			};
+			name = Release;
+		};
+		023039441E925354009DCDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = D243YH28Y6;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		023039451E925354009DCDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = D243YH28Y6;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0230393F1E925354009DCDB5 /* Build configuration list for PBXProject "RedcarpetXcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023039411E925354009DCDB5 /* Debug */,
+				023039421E925354009DCDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		023039431E925354009DCDB5 /* Build configuration list for PBXLegacyTarget "RedcarpetXcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				023039441E925354009DCDB5 /* Debug */,
+				023039451E925354009DCDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0230393C1E925354009DCDB5 /* Project object */;
+}
