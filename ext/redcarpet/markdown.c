@@ -1825,7 +1825,7 @@ static size_t
 parse_listitem(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t size, int *flags)
 {
 	struct buf *work = 0, *inter = 0;
-	size_t beg = 0, end, pre, sublist = 0, orgpre = 0, i;
+	size_t beg = 0, end, pre, sublist = 0, sublistpre = 0, orgpre = 0, i;
 	int in_empty = 0, has_inside_empty = 0, in_fence = 0;
 
 	/* keeping track of the first indentation prefix */
@@ -1903,8 +1903,10 @@ parse_listitem(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t s
 			if (pre == orgpre) /* the following item must have */
 				break;             /* the same indentation */
 
-			if (!sublist)
+			if (!sublist) {
 				sublist = work->size;
+				sublistpre = i;
+			}
 		}
 		/* joining only indented stuff after empty lines */
 		else if (in_empty && i < 4 && data[beg] != '\t') {
@@ -1917,6 +1919,9 @@ parse_listitem(struct buf *ob, struct sd_markdown *rndr, uint8_t *data, size_t s
 		}
 
 		in_empty = 0;
+
+		if (sublist && sublistpre < i)
+			i = sublistpre;
 
 		/* adding the line without prefix into the working buffer */
 		bufput(work, data + beg + i, end - beg - i);
